@@ -1,0 +1,371 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.cont-wrap {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: #EEECE5;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  width: 327px;
+  height: 43px;
+  left: 27px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+
+}
+
+header .header-left {
+  width: 43px;
+  height: 43px;
+  background-color: black;
+  border: 1px solid #DCCDB6;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+}
+
+header .header-title {
+  width: 50px;
+  height: 24px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+header .header-right {
+  height: 24px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+header .header-right .material-icons.QR {
+  font-size: 24px;
+  margin-right: 18px;
+  color: #FF5F00;
+}
+
+header .header-right .material-icons.search {
+  font-size: 24px;
+  color: #FF5F00;
+}
+
+/* NAV */
+.option {
+  width: 375px;
+  height: 76px;
+  background: linear-gradient(#00BDB2, #C4E7B8);
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.option .option-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76px;
+  width: 375px;
+}
+
+.option .option-menu li {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.option .option-menu li:first-child {
+  color: #005F59;
+}
+
+.option .option-menu li a {
+  font-size: 24px;
+  color: #EEECE5;
+}
+
+.option .option-menu li:first-child a {
+  color: #005F59;
+}
+
+/* MAIN */
+main {
+  position: absolute;
+  top: 76px;
+  width: 375px;
+}
+
+/* SECTION1 */
+
+main .sec1 .sec1-box {
+  width: 279px;
+  height: 155px;
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
+  border-radius: 12px;
+  text-align: center;
+  padding: 14px 17px 6px;
+  position: relative;
+}
+
+main .sec1 .sec1-box .account-number {
+  font-size: 14px;
+}
+
+main .sec1 .sec1-box .transfer {
+  font-size: 14px;
+  position: absolute;
+  right: 14px;
+  outline: none;
+}
+
+main .sec1 .sec1-box .budget {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  padding-top: 16px;
+}
+
+main .sec1 .sec1-box .budget small {
+  font-size: 12px;
+}
+
+main .sec1 .sec1-box .budget-bar {
+  width: 202px;
+  height: 6px;
+  background-color: #C4C4C4;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 23px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+main .sec1 .sec1-box .budget-bar .yellow-bar {
+  width: 128px;
+  height: 6px;
+  background-color: #FFDB4C;
+  border-radius: 3px 0px 0px 3px;
+  box-sizing: border-box;
+}
+
+main .sec1 .sec1-box .budget-bar .grey-bars {}
+
+main .sec1 .sec1-box .budget-bar .orange-bar {
+  width: 4px;
+  height: 17px;
+  background-color: #FF5F00;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  position: absolute;
+  right: calc(202px - 128px);
+  top: -8.5px;
+}
+
+main .sec1 .sec1-box .goal {
+  font-weight: 500;
+  font-size: 14px;
+  color: #858585;
+  line-height: 21px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 6px;
+  margin: 0 auto;
+}
+
+/* LOAN */
+.loan {
+  width: 238px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.loan a {
+  font-size: 14px;
+}
+
+/* SECTION2 */
+.sec2 {
+  width: 375px;
+  height: 670px;
+  background-color: #F5F5F5;
+  margin-top: 21px;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
+  position: relative;
+  padding: 0 30px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.sec2.up{
+  transform: translateY(-251px);
+}
+
+.sec2 .up-scroll-bar {
+  width: 48px;
+  height: 2.15px;
+  background-color: #C4C4C4;
+  position: absolute;
+  top: 4.3px;
+  right: 165px;
+
+}
+
+.sec2 .hope-list {
+  display: flex;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+.sec2 .hope-list .hope-bar.num1,
+.sec2 .hope-list .hope-bar.num2 {
+  width: 162px;
+  height: 47px;
+  background-color: #DADADA;
+  margin-top: 25px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.sec2 .hope-list .hope-bar.num1 {
+  margin-right: 16px;
+}
+
+.sec2 .hope-list .hope-bar.num1 .hope-bar-gage {
+  position: absolute;
+  background-color: #FF5F00;
+  height: 100%;
+  width: 60%;
+  border-radius: 6px 0 0 6px;
+}
+
+.sec2 .hope-list .hope-bar.num2 .hope-bar-gage {
+  position: absolute;
+  background-color: #FEB700;
+  height: 100%;
+  width: 75%;
+  border-radius: 6px 0 0 6px;
+}
+
+.sec2 .hope-list .hope-bar.num2 .hope-bar-gage span,
+.sec2 .hope-list .hope-bar.num1 .hope-bar-gage span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin-left: 13px;
+  line-height: 22px;
+}
+
+.sec2 .today-spend {
+  padding-top: 16px;
+
+}
+
+.sec2 .today-spend>div {
+  display: flex;
+  position: relative;
+}
+
+.sec2 .today-spend>div>h4 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  
+}
+
+.sec2 .today-spend>div>span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #B4B4B4;
+  position: absolute;
+  right: 0;
+}
+
+.sec2 .today-spend > ul {
+}
+.sec2 .today-spend > ul > li{
+  border-bottom: 2px solid #DCDCDC;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+  font-weight: 300;
+  color: #444444;
+
+  
+}
+
+.sec2 .today-spend > ul > li .money{
+ position: absolute;
+ right: 0;
+}
+
+
+
+.sec2 .yesterday-spend {
+  padding-top: 38px;
+
+}
+
+.sec2 .yesterday-spend>div {
+  display: flex;
+  position: relative;
+}
+
+.sec2 .yesterday-spend>div>h4 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  
+}
+
+.sec2 .yesterday-spend>div>span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #B4B4B4;
+  position: absolute;
+  right: 0;
+}
+
+.sec2 .yesterday-spend > ul {
+}
+.sec2 .yesterday-spend > ul > li{
+  border-bottom: 2px solid #DCDCDC;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+  font-weight: 300;
+  color: #444444;
+
+  
+}
+
+.sec2 .yesterday-spend > ul > li .money{
+ position: absolute;
+ right: 0;
+ 
+
+}

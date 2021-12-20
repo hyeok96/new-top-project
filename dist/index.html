@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- reset.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- google-font 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="/main.af46ece4.css">
+
+  <script src="/main.1f19ae8e.js" defer=""></script>
+<script src="/main.af46ece4.js"></script></head>
+
+<body>
+  <div class="cont-wrap">
+    <header>
+      <div class="header-left">
+        <img>
+      </div>
+      <h1 class="header-title">생활비</h1>
+      <div class="header-right">
+        <span class="QR material-icons">
+          qr_code_scanner
+        </span>
+        <span class="search material-icons">
+          search
+        </span>
+      </div>
+    </header>
+    <!-- 네비 메뉴는 position:fixed 로 하단에 고정 -->
+    <nav class="option">
+      <ul class="option-menu">
+        <li>
+          <a href="javascript:void(0)" class="material-icons">home</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="material-icons">swap_horiz</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="material-icons">comment</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="material-icons">more_horiz</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="sec1">
+        <div class="sec1-box">
+          <span class="account-number">1111-1111-1111</span>
+          <a src="javascript:void(0)" class="transfer">이체</a>
+          <p class="budget"><small>원</small></p>
+          <!-- JS를 통해서 바의 위치와 넓이를 변동 -->
+          <div class="budget-bar">
+            <div class="yellow-bar"></div>
+            <div class="grey-bar"></div>
+            <div class="orange-bar"></div>
+          </div>
+          <span class="goal">5일 동안 210,000원 남음</span>
+        </div>
+      </section>
+
+      <aside class="loan">
+        <a src="javascript:void(0)">낮은 이자로 100만원을 신청하세요! GO!</a>
+      </aside>
+
+      <!--평소에는 숨겨두다가 위로 스크롤하면 active가 되도록 한다.-->
+      <!-- -->
+      <section class="sec2">
+        <div class="up-scroll-bar"></div>
+
+        <!--JS를 통해 hope_list를 받아 리스트를 만든다.-->
+        <div class="hope-list">
+          <div class="hope-bar num1">
+            <div class="hope-bar-gage">
+              <span class="title"></span>
+              <span class="money">842,200</span>
+            </div>
+          </div>
+          <div class="hope-bar num2">
+            <div class="hope-bar-gage">
+              <span class="title">냉장고사기</span>
+              <span class="money">142,200</span>
+            </div>
+          </div>
+          <div class="hop-bar-plus"></div>
+          <div class="sec2-box1-leftscroll-bar"></div>
+          <div class="sec2-box1-rightscroll-bar"></div>
+        </div>
+
+        <div class="today-spend">
+          <div>
+            <h4>오늘</h4>
+            <span>127,600원 지출</span>
+          </div>
+          <ul>
+            <li>
+              <span>미스터피자</span>
+              <span class="money">32,000</span>
+            </li>
+            <li>
+              <span>택시</span>
+              <span class="money">4,800</span>
+            </li>
+            <li>
+              <span>이마트</span>
+              <span class="money">86,000</span>
+            </li>
+            <li>
+              <span>스타벅스</span>
+              <span class="money">4,800</span>
+            </li>
+            <li>
+              <span>전길수</span>
+              <span class="money">+32,000</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="yesterday-spend">
+          <div>
+            <h4>어제</h4>
+            <span>71,600원</span>
+          </div>
+          <ul>
+            <li>
+              <span>CU</span>
+              <span class="money">8,900</span>
+            </li>
+            <li>
+              <span>김경남</span>
+              <span class="money">+31,000</span>
+            </li>
+            <li>
+              <span>애슐리</span>
+              <span class="money">31,000</span>
+            </li>
+            <li>
+              <span>교보문고</span>
+              <span class="money">18,000</span>
+            </li>
+            <li>
+              <span>쿠팡</span>
+              <span class="money">10,500</span>
+            </li>
+            <li>
+              <span>미스터피자</span>
+              <span class="money">32,000</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

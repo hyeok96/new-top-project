@@ -1,0 +1,8 @@
+{
+    "accountName":"내 계좌",
+    "accountNumber":"111-111-111",
+    "accountMoney":"1,240,000",
+    "hopelist1": {"name":"여행가자", "money":"842,200"},
+    "hopelist2": {"name":"냉장고사기", "money":"142,200"}
+
+}
